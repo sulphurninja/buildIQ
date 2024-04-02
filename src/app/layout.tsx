@@ -6,8 +6,8 @@ import { ThemeProvider } from "@/providers/theme-provider";
 const font = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "FlowIQ - Fastest Automation",
-  description: "FlowIQ - The Fastest Automation Builder on the planet!",
+  title: "buildIQ - Fastest Automation",
+  description: "buildIQ - The Fastest Automation Builder on the planet!",
 };
 
 export default function RootLayout({
