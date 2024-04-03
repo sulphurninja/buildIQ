@@ -6,7 +6,7 @@ type Props = {children: React.ReactNode}
 
 const Layout = (props: Props) => {
   return (
-    <div className='flex overflow-hidden scrollbar-hide h-screen'>
+    <div className='flex overflow-hidden scrollbar-hide h-screen '>
       <MenuOptions />
         <div className='w-full'>
           <InfoBar/>

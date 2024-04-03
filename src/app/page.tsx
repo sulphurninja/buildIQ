@@ -18,12 +18,12 @@ export default function Home() {
 
 
   return (
-    <main className="mx-2">
+    <main className="">
       <Navbar />
 
-      <div className="h-[40rem] text-center   w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
+      <div className="h-[40rem] text-center   w-full dark:bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
 
-        <h1 className="text-4xl md:text-6xl mb-2  bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-600 font-sans font-bold">
+        <h1 className="text-4xl md:text-6xl mb-2 bg-black  bg-clip-text text-transparent dark:bg-gradient-to-b from-white to-neutral-600 font-sans font-bold">
           buildIQ
         </h1>
         <TextGenerateEffect words="The Fastest Automation Builder on the planet!" />
@@ -36,9 +36,9 @@ export default function Home() {
           <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
           <Button
             size={'lg'}
-            className="p-6 md:p-8 absolute z-10 mt-12 md:ml-40 ml-52 mb-8 md:mb-0 md:text-2xl text-xl cursor-pointer  w-fit border-t-2 rounded-full border-[#4D4D4D] bg-[#1F1F1F] hover:bg-white group transition-all flex items-center justify-center gap-4 hover:shadow-xl hover:shadow-neutral-500 duration-500"
+            className="p-6 md:p-8 absolute z-10 mt-12 md:ml-40 ml-52 mb-8 md:mb-0 md:text-2xl text-xl cursor-pointer  w-fit border-t-2 rounded-full border-[#4D4D4D] dark:bg-[#1F1F1F] dark:hover:bg-white group transition-all flex items-center justify-center gap-4 hover:shadow-xl dark:hover:shadow-neutral-500 duration-500"
           >
-            <span className="bg-clip-text text-transparent cursor-pointer bg-gradient-to-r from-neutral-500 to-neutral-600  md:text-center font-sans group-hover:bg-gradient-to-r group-hover:from-black goup-hover:to-black">
+            <span className="dark:bg-clip-text  text-white dark:text-transparent cursor-pointer  dark:bg-gradient-to-r from-neutral-500 to-neutral-600   md:text-center font-sans dark:group-hover:bg-gradient-to-r dark:group-hover:from-black dark:group-hover:to-black">
               Start For Free Today
             </span>
           </Button>
@@ -52,7 +52,7 @@ export default function Home() {
             particleColor="#FFFFFF"
           />
 
-          <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
+          <div className="absolute inset-0 w-full h-full dark:bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
         </div>
         <InfiniteMovingCardsDemo />
 
@@ -60,7 +60,7 @@ export default function Home() {
       <section>
         <HeroParallax products={products}></HeroParallax>
       </section>
-      <section className="bg-black/40 md:mt-0 -mt-[20rem]">
+      <section className="dark:bg-black/40 bg-black md:mt-0 -mt-[20rem]">
         <SpotlightComponent />
         <div className="-mt-56 md:mt-0">
         <PlanHeader/>
