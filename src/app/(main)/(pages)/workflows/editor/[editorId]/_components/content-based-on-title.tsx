@@ -1,5 +1,5 @@
 import { AccordionContent } from '@/components/ui/accordion'
-import { ConnectionProviderProps } from '@/providers/connections-provider'
+import { ConnectionProviderProps } from '@/providers/connection-provider'
 import { EditorState } from '@/providers/editor-provider'
 import { nodeMapper } from '@/lib/types'
 import React, { useEffect } from 'react'
