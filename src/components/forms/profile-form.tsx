@@ -4,6 +4,7 @@ import React, { use, useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
+import { EditUserProfileSchema } from '@/lib/types'
 import {
   Form,
   FormControl,
@@ -15,7 +16,6 @@ import {
 import { Input } from '../ui/input'
 import { Button } from '../ui/button'
 import { Loader2 } from 'lucide-react'
-import { EditUserProfileSchema } from '@/lib/types'
 
 type Props = {
   user: any
@@ -57,7 +57,7 @@ const ProfileForm = ({ user, onUpdate }: Props) => {
           name="name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-lg">Full name</FormLabel>
+              <FormLabel className="text-lg">User full name</FormLabel>
               <FormControl>
                 <Input
                   {...field}
