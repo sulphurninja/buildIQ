@@ -70,14 +70,13 @@ const RenderConnectionAccordion = ({
   const [open, setOpen] = React.useState(false)
   const [value, setValue] = React.useState('')
 
-  const connectionData = (nodeConnection as any)[connectionKey];
+  const connectionData = (nodeConnection as any)[connectionKey]
+
   const isConnected =
     alwaysTrue ||
-    (nodeConnection[connectionKey as keyof typeof nodeConnection] &&
+    (nodeConnection[connectionKey] &&
       accessTokenKey &&
-      connectionData && typeof connectionData === 'object' &&
-      connectionData[accessTokenKey as keyof typeof connectionData]);
-
+      connectionData[accessTokenKey!])
 
   return (
     <AccordionContent key={title}>
